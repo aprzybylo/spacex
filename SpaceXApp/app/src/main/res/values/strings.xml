@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SpaceX App</string>
+    <string name="all_launches">wszystkie</string>
+    <string name="past_launches">przeszłe</string>
+    <string name="upcoming_launches">zaplanowane</string>
+    <string name="rocket_name">Nazwa rakiety</string>
+    <string name="date">Data</string>
+    <string name="mission_name">Nazwa misji</string>
+    <string name="link">więcej</string>
+    <string name="default_mission">Mission name</string>
+    <string name="default_date">01.01.1970 00:00</string>
+    <string name="successful">zakończony powodzeniem</string>
+    <string name="unsuccessful">zakończony niepowodzeniem</string>
+    <string name="empty_view">Lista jest pusta lub brak połączenia z internetem. </string>
+</resources>

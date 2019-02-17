@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/listview_padding"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <RadioButton
+                android:id="@+id/all_launches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar_button"
+                android:checked="true"
+                style="@style/BarButton"
+                android:text="@string/all_launches"/>
+
+        <RadioButton
+                android:id="@+id/past_launches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar_button"
+                style="@style/BarButton"
+                android:text="@string/past_launches"/>
+
+        <RadioButton
+                android:id="@+id/upcoming_launches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar_button"
+                style="@style/BarButton"
+                android:text="@string/upcoming_launches"/>
+
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_view"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/listview_padding"
+            android:paddingRight="@dimen/listview_padding"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/listview_padding"
+            android:paddingRight="@dimen/listview_padding">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
